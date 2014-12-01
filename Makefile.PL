@@ -9,7 +9,7 @@ $eumm_version =~ s/_//;
 
 WriteMakefile(
     NAME                => 'hb',
-    AUTHOR              => q{YOUR NAME <youremail@example.com>},
+    AUTHOR              => q{Andrew MacLeay <a.macleay@gmail.com>},
     VERSION_FROM        => 'lib/hb.pm',
     ABSTRACT            => 'YOUR APPLICATION ABSTRACT',
     ($eumm_version >= 6.3001
@@ -20,6 +20,8 @@ WriteMakefile(
         'Test::More' => 0,
         'YAML'       => 0,
         'Dancer'     => 1.3132,
+        'Dancer::Template::Mustache' => 0,
+        'Data::Dumper::Concise' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'hb-*' },
