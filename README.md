@@ -17,3 +17,5 @@ cpanm YAML Dancer Dancer::Template::Mustache Data::Dumper::Concise
 If any of the perl distributions fail, you can force them to install with `cpanm DISTRIBUTION --force` if necessary
 (always check the logs for the reason for failure first)
 
+Bump
+
